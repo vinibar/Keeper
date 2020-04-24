@@ -1,0 +1,28 @@
+{
+  "name": "Keeper",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^3.33.1",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.4.25",
+    "express": "^4.17.1",
+    "sqlite3": "^4.1.1"
+  },
+  "scripts": {
+    "start": "npx cds run"
+  },
+  "devDependencies": {},
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db/Keeper.db"
+        }
+      }
+    }
+  }
+}
